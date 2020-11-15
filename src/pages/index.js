@@ -154,13 +154,13 @@ export default function Home() {
         ></iframe>
       </section>
       {/* main */}
-      <Container className="mt-5">
+      <Container>
         {/* features */}
-        <section dir={direction}>
+        <section dir={direction} className="mt-5">
           <Row className="text-center d-flex justify-content-center">
             {features.map((item, index) => (
               <Col key={index} xs={12} sm={4}>
-                <Card className="card border-0">
+                <Card className="card border-0 mt-3">
                   <Card.Img
                     variant="top"
                     src={item.imageSource}
@@ -176,7 +176,7 @@ export default function Home() {
           </Row>
         </section>
         {/* payment logo */}
-        <hr />
+        <hr className="mt-4" />
         <section dir={direction}>
           <Row className="d-flex justify-content-center my-5">
             {paymentImages.map((src, index) => (
