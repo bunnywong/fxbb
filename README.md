@@ -1,7 +1,7 @@
 # Simple bootstrap SPA challenge
 
 - build with Gatsby hello world starter
-- preview [here](https://fxbb.netlify.app) [![Netlify Status](https://api.netlify.com/api/v1/badges/f0ab988c-14fd-4e26-b87d-973cfd02c32b/deploy-status)](https://app.netlify.com/sites/fxbb/deploys)
+- preview [here](https://fxbb.netlify.app) [![Netlify Status](https://api.netlify.com/api/v1/badges/28aca603-61b8-48b8-897f-b95ed69e2a68/deploy-status)](https://app.netlify.com/sites/fxbb/deploys)
 - source [here](https://github.com/bunnywong/fxbb/tree/master/src)
 - main template [here](https://github.com/bunnywong/fxbb/blob/master/src/pages/index.js)
 - main CSS [here](https://github.com/bunnywong/fxbb/blob/master/src/style.css)
