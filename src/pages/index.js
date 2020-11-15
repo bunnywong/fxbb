@@ -7,25 +7,25 @@ import Row from 'react-bootstrap/Row'
 import clsx from 'clsx'
 import { useLocation } from '@reach/router'
 // hero images
-import imgHero from './../../static/images/hero/forex-trader-1920x860.jpg'
-import imgHeroRtl from './../../static/images/hero/forex-trader-rtl.jpg'
+import imgHero from 'src/images/hero/forex-trader-1920x860.jpg'
+import imgHeroRtl from 'src/images/hero/forex-trader-rtl.jpg'
 // feature images
-import imgFreeWebinars from './../../static/images/features/free-webinars.png'
-import imgLocalSeminars from './../../static/images/features/local-seminars.png'
-import imgPracticeAccount from './../../static/images/features/practice-account.png'
+import imgFreeWebinars from 'src/images/features/free-webinars.png'
+import imgLocalSeminars from 'src/images/features/local-seminars.png'
+import imgPracticeAccount from 'src/images/features/practice-account.png'
 // payment logo
-import imgMastro from './../../static/images/payments/maestro.png'
-import imgNeteller from './../../static/images/payments/neteller.png'
-import imgPayza from './../../static/images/payments/payza.png'
-import imgUnionPay from './../../static/images/payments/uniuon-pay.png'
-import imgWesternUnion from './../../static/images/payments/western-union.png'
-import imgMasterCard from './../../static/images/payments/master-card.png'
-import imgScril from './../../static/images/payments/scrill.png'
-import imgVisa from './../../static/images/payments/visa.png'
-import imgWebMoney from './../../static/images/payments/web-money.png'
+import imgMastro from 'src/images/payments/maestro.png'
+import imgNeteller from 'src/images/payments/neteller.png'
+import imgPayza from 'src/images/payments/payza.png'
+import imgUnionPay from 'src/images/payments/uniuon-pay.png'
+import imgWesternUnion from 'src/images/payments/western-union.png'
+import imgMasterCard from 'src/images/payments/master-card.png'
+import imgScril from 'src/images/payments/scrill.png'
+import imgVisa from 'src/images/payments/visa.png'
+import imgWebMoney from 'src/images/payments/web-money.png'
 // style
 import 'bootstrap/dist/css/bootstrap.min.css'
-import '../../static/style.css'
+import 'static/style.css'
 
 export default function Home() {
   const myRef = useRef(null)
@@ -74,7 +74,7 @@ export default function Home() {
       <h2 className="text-orange">
         <strong>Learn how to trade & increase your earning potential!</strong>
       </h2>
-      <h2 className="mt-3">Register now and get:</h2>
+      <h2 className="mt-4">Register now and get:</h2>
       <ul className="p-0">
         <li>
           <GreenTick />
