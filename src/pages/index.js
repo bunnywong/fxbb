@@ -105,7 +105,7 @@ export default function Home() {
   )
 
   useEffect(() => {
-    if (location.search.indexOf('?rtl') >= 0) {
+    if (location.search.indexOf('rtl') >= 0) {
       setRtl(true)
     }
   }, [location])
@@ -139,7 +139,7 @@ export default function Home() {
               <iframe
                 src="https://my.forextime.com/en/identity/registration?sbt=Register%20Now&abt=Login%20to%20MyFXTM&theme=black"
                 title="Registration"
-                className="border-0 w-100 "
+                className="border-0 w-100"
               ></iframe>
             </Col>
           </Row>
@@ -150,7 +150,7 @@ export default function Home() {
         <iframe
           src="https://my.forextime.com/en/identity/registration?sbt=Register%20Now&abt=Login%20to%20MyFXTM&theme=black"
           title="Registration"
-          className="border-0 w-100 "
+          className="border-0 w-100"
         ></iframe>
       </section>
       {/* main */}
