@@ -67,14 +67,14 @@ export default function Home() {
     imgWebMoney,
   ]
   const HeroContent = () => (
-    <div className="pt-3 text-white">
+    <div className="mt-4 text-white">
       <h1>
         <strong>NEW TO FOREX?</strong>
       </h1>
       <h2 className="text-orange">
         <strong>Learn how to trade & increase your earning potential!</strong>
       </h2>
-      <h3 className="mt-5">Register now and get:</h3>
+      <h2 className="mt-3">Register now and get:</h2>
       <ul className="p-0">
         <li>
           <GreenTick />
@@ -89,12 +89,18 @@ export default function Home() {
           <span className="mx-1">Personal, friendly support</span>
         </li>
       </ul>
+      <Button
+        className="btn-register-now rounded-0 border-0 mx-auto text-dark mt-3 d-md-block d-lg-none mx-auto text-center"
+        onClick={executeScroll}
+      >
+        <strong>REGISTER NOW</strong>
+      </Button>
     </div>
   )
   const GreenTick = () => (
     <img
       src="https://www.forextime.com/sites/default/files/lp/new-homepage/green-tick-small.svg"
-      alt="tick"
+      alt="bullet point"
     />
   )
 
@@ -106,62 +112,39 @@ export default function Home() {
 
   return (
     <>
-      <div className="bbq">
-        {/* mobile */}
-        <section className="mobile hero d-sm-block d-lg-none d-xl-none text-center">
-          <div className="layer w-100 h-100" />
-          <HeroContent />
-          <div className="position-absolute w-100">
-            <Button
-              className="btn-register-now rounded-0 border-0 mx-auto text-dark mt-3 d-md-block d-lg-none mx-auto text-center"
-              onClick={executeScroll}
-            >
-              REGISTER NOW
-            </Button>
-          </div>
-          <img
-            src={rtl ? imgHeroRtl : imgHero}
-            className="hero-image"
-            alt="hero image"
-          />
-        </section>
-
-        <section
-          dir={direction}
-          className="desktop hero d-none d-sm-none d-lg-block"
-          style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      <section
+        dir={direction}
+        className="desktop hero"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
     url(${rtl ? imgHeroRtl : imgHero})`,
-          }}
-        >
-          <Container>
-            <Row>
-              {/* LHS */}
-              <Col
-                dir={direction}
-                lg={{ span: 7 }}
-                className={clsx({
-                  'mt-5 text-white text-center': true,
-                  'text-lg-right': rtl,
-                  'text-lg-left': !rtl,
-                })}
-              >
-                <div className="mt-3 d-none d-lg-block">
-                  <HeroContent />
-                </div>
-              </Col>
-              {/* RHS */}
-              <Col lg={{ span: 5 }} className="mt-3 d-none d-lg-block">
-                <iframe
-                  src="https://my.forextime.com/en/identity/registration?sbt=Register%20Now&abt=Login%20to%20MyFXTM&theme=black"
-                  title="Registration"
-                  className="border-0 w-100 "
-                ></iframe>
-              </Col>
-            </Row>
-          </Container>
-        </section>
-      </div>
+        }}
+      >
+        <Container>
+          <Row>
+            {/* LHS */}
+            <Col
+              dir={direction}
+              lg={{ span: 7 }}
+              className={clsx({
+                'text-white text-center': true,
+                'text-lg-right': rtl,
+                'text-lg-left': !rtl,
+              })}
+            >
+              <HeroContent />
+            </Col>
+            {/* RHS */}
+            <Col lg={{ span: 5 }} className="mt-3 d-none d-lg-block">
+              <iframe
+                src="https://my.forextime.com/en/identity/registration?sbt=Register%20Now&abt=Login%20to%20MyFXTM&theme=black"
+                title="Registration"
+                className="border-0 w-100 "
+              ></iframe>
+            </Col>
+          </Row>
+        </Container>
+      </section>
 
       <section className="d-md-block d-lg-none" ref={myRef}>
         <iframe
