@@ -8,7 +8,7 @@
 
 ## 🚀 Features
 
-- RTL support by param (e.g. `http://localhost:8000?rtl=1` / [preview](https://fxbb.netlify.app?rtl=1))
+- RTL support by param ( e.g. `http://localhost:8000/?rtl=1` / [preview](https://fxbb.netlify.app/?rtl=1) )
 
 ## 🚀 Quick start: developing
 
