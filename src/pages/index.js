@@ -105,7 +105,7 @@ export default function Home() {
   )
 
   useEffect(() => {
-    if (location.search === '?ltr=true') {
+    if (location.search === '?ltr=1') {
       setRtl(true)
     }
   }, [location])
