@@ -25,7 +25,7 @@ import imgVisa from 'src/images/payments/visa.png'
 import imgWebMoney from 'src/images/payments/web-money.png'
 // style
 import 'bootstrap/dist/css/bootstrap.min.css'
-import 'static/style.css'
+import 'src/style.css'
 
 export default function Home() {
   const myRef = useRef(null)
