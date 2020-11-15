@@ -8,7 +8,7 @@
 
 ## 🚀 Features
 
-- LTR support by param (e.g. `http://localhost:8000/?ltr=1` / [preview](https://fxbb.netlify.app?ltr=1))
+- LTR support by param (e.g. `http://localhost:8000/?rtl=1` / [preview](https://fxbb.netlify.app?ltr=1))
 
 ## 🚀 Quick start: developing
 
