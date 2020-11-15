@@ -159,12 +159,12 @@ export default function Home() {
         <section dir={direction}>
           <Row className="text-center d-flex justify-content-center">
             {features.map((item, index) => (
-              <Col key={index}>
+              <Col key={index} xs={12} sm={4}>
                 <Card className="card border-0">
                   <Card.Img
                     variant="top"
                     src={item.imageSource}
-                    className="feature-image d-block mx-auto"
+                    className="feature-image d-block mx-auto mw-100"
                   />
                   <Card.Body>
                     <Card.Title className="mx-auto">{item.title}</Card.Title>
